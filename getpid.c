@@ -4,9 +4,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <sys/syscall.h>
+#include <unistd.h>
 
-
-inline unsigned long long rdtsc() {
+static inline unsigned long long rdtsc() {
   unsigned long long x;
   //CPUID to serailize; Not required 
   //__asm__ volatile (".byte 0x0f, 0xa2");
