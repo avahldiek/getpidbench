@@ -5,7 +5,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <sys/syscall.h>
-
+#include "syscallbench_helper.h"
 
 int main(int argc, char **argv) {
 	if (argc < 3) {
